@@ -10,6 +10,7 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const currentUser={  displayName:"Helen" } 
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -32,6 +33,7 @@ export default function Example() {
                     alt="Your Company"
                   /> </Link>Movie App
                 </div>
+
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                
@@ -41,7 +43,7 @@ export default function Example() {
 
 {/* Navigation kısmı oluşturulan bölüm */}
             <div>
-            <a href="">React Movie App</a>
+           { currentUser && <p class="text-white">{currentUser.displayName}</p>}
             </div>
 
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
