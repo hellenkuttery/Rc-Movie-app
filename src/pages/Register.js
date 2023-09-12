@@ -20,15 +20,20 @@ const Register = () => {
             <label htmlFor="floating_text">Last Name</label>
           </div>
           <div>
-            <input name="floating_email" type="email" />
+            <input name="floating_email" type="text" />
             <label htmlFor="floating_email">Email</label>
           </div>
           <div>
             <input name="floating_password" type="password" />
             <label htmlFor="floating_password">Password</label>
           </div>
-          <button type="submit">Register</button>
-          <button type="button">
+          <button type="submit" className="btn-danger">
+            Register
+          </button>
+          <button
+            type="button"
+            className="btn-danger flex justify-between items-center"
+          >
             Continue with Google
             <GoogleIcon color="currentColor" />
           </button>

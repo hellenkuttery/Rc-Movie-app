@@ -1,11 +1,13 @@
 
 import "./App.css";
-import Register from "./pages/Register";
+
+import Approuter from './router/AppRouter';
 
 function App() {
   return (
     <div className="App">
-      <Register />
+      <Approuter/>
+ 
     </div>
   );
 }
