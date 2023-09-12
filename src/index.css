@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,29 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* Login Custom CSS */
+
+.custom-linear-gradient::before {
+  background: linear-gradient(0deg, transparent, #ff4b45);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.custom-linear-gradient::after {
+  background: linear-gradient(0deg, transparent, #ff4b45);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 }
